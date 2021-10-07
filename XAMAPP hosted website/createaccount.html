@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+
+	<h1> Pharma Online <img src="cross.jpg" width="35" height="35" style="vertical-align:middle;"> </h1>
+	 <div class="topnav">
+  <a href="homepage.html">Home</a>
+  <a class="active" href="#news">Create Account</a>
+  <a href="loginpage.html">Login</a>
+  <a href="orderpage.html">Order</a>
+  <a href="logout.php">Logout</a>
+  <a href="contact.html">Contact</a>
+</div>
+<h2> Create an Account today. </h2>
+<form action = "add.php" method="post">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" size="20" required>
+  <br><br>
+  <label for="pass">Password:</label>
+  <input type="password" id="pass" name="pass"  size="20" required ><br><br>
+  <label for="mail">Email:</label>
+  <input type="email" id="mail" name="mail" size="20" required ><br><br>
+  <label for ="radio"> Member type:</label>
+  <input type="radio" id="radio" name="radio" value="regular" required>
+  <label for="membertype"> regular</label>
+  <input type="radio" id="radio" name="radio" value="admin" required>
+  <label for="radio">admin</label><br>
+  <input class ="button" type="submit" value="Create account">
+  <input class ="button" type="submit" value="See database" onclick="location.href='index.php'">
+</form>
+
+</div>
+</form>
+</body>
+</html>
